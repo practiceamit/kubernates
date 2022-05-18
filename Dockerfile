@@ -9,5 +9,5 @@ RUN unzip uxos.zip
 RUN cp -rvf uxos/* .
 RUN rm -rf uxos uxos.zip
 CMD ["/usr/sbin/httpd","-D","FOREGROUND"]
-EXPOSE 80
+EXPOSE 80 22
 
